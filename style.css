@@ -1,0 +1,127 @@
+ :root {
+    --bg:  #000000;
+    --border:#222222;
+    --text:#656565;
+    --drop:rgb(255, 255, 255,0.4);
+
+
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;/* Prevents scrollbars */
+}
+body {
+
+    font-family:  Roboto;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg);
+}
+
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.frame0{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+.frame1{
+    background-color: var(--bg);
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 35% 65%;
+    padding: 8px;
+    gap: 4px;
+
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction:row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+    font-family: monospace;
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 500;
+}
+.text_holder{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+.header img{
+    width: 40px;
+    height: 40px;
+
+}
+.box{
+
+    width: 0%;
+    height: 0%;
+
+  
+}
+.box0{
+    background-color: var(--bg);
+    border: 2px solid var(--border);
+
+    border-radius: 10px;
+    grid-row: span 2;
+    grid-column: span 1;
+}
+.box1{
+    background-color: var(--bg);
+    border: 2px solid var(--border);
+
+    border-radius: 10px;
+    grid-row:  1;
+    grid-column: 2;
+}
+.box2{
+    background-color: var(--bg);
+    border: 2px solid var(--border);
+
+    border-radius: 10px;
+    grid-row:  2;
+    grid-column: 2;
+}
